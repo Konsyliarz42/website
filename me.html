@@ -1,15 +1,80 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <meta charset="utf-8">
         <title>My first website</title>
-        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1 style="background-color:teal;">Witaj na mojej stronie</h1>
-        <img src="Logo.png" alt="This is my logo" title="My logo" style="width: 256px;">
-        <h2 style="color: maroon;"> O mnie</h2>
-        <p><strong>Imię - </strong>Tomasz</p>
-        <p><strong>Nazwisko - </strong>Kordiak</p>
+        <div class="jumbotron mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4"><strong>Witaj na mojej stronie</strong></h1>
+                    </div>
+                    <div class="col">
+                        <img src="Logo.png" alt="This is my logo" title="My logo" style="width: 256px;" class="mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-2 my-2 border text-center bg-dark">
+            <h1 class="font-weight-light text-light">O mnie</h1>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row mb-2">
+                <div class="col"><p><strong>Imię - </strong>Tomasz</p></div>
+                <div class="col"><p><strong>Drugie imię - </strong>Piotr</p></div>
+                <div class="col"><p><strong>Nazwisko - </strong>Kordiak</p></div>
+            </div>
+        </div>
+   
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Doświadczenie</h1></div>
+            <ul>
+                <li>Praca</li>
+                <li>Kurs</li>
+                <li>Więcej pracy</li>
+            </ul>
+        </div>
+
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Edukacja</h1></div>
+            <ul>
+                <li>Szkoła</li>
+                <li>Wcześniejsza szkoła</li>
+            </ul>
+        </div>
+
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Języki</h1></div>
+            <ul>
+                <li>Język</li>
+                <li>Inny język</li>
+            </ul>
+        </div>
+
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Umiejętności</h1></div>
+            <ul>
+                <li>Robienie czegoś</li>
+                <li>Robienie czegoś innego</li>
+                <li>I takie tam</li>
+            </ul>
+        </div>
+
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Zainteresowania</h1></div>
+            <ul>
+                <li>Takie coś</li>
+                <li>Coś innego</li>
+                <li>To z takim czymś</li>
+            </ul>
+        </div>
     </body>
 </html>
