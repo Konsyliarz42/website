@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="pl">
     <head>
-        <meta charset="utf-8">
         <title>My first website</title>
-        <link rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <h1 style="background-color:rgb(25, 82, 104);">Witaj na mojej stronie</h1>
-        <h2 style="color: olive;">Kontakt</h2>
-        <ul>
-            <li><strong>email: </strong>dotomika@gmail.com</li>
-            <li><strong>telefon: </strong>535357027</li>
-        </ul>
-        <h3 style="color: orange;">Wyślij wiadomość</h3>
-        <form action="/send-message">
-            <textarea name="message" cols="64" rows="8"></textarea><br>
-            <input type="button" value="Prześlij">
-        </form>
+        <div class="jumbotron mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="display-4"><strong>Witaj na mojej stronie</strong></h1>
+                    </div>
+                    <div class="col">
+                        <img src="Logo.png" alt="This is my logo" title="My logo" style="width: 256px;" class="mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid p-2 m-0 border text-center bg-dark">
+            <h1 class="font-weight-light text-light">Kontakt</h1>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row my-2">
+                <div class="col"><p><strong>E-mail - </strong>dotomika@gmail.com</p></div>
+                <div class="col"><p><strong>Telefon - </strong>535357027</p></div>
+            </div>
+        </div>
+
+        <div class="container border shadow p-4 mb-4 bg-white">
+            <div class="jumbotron m-0 p-2 text-center"><h4>Wyślij wiadomość</h1></div>
+            <div class="form-group">
+                <label class="my-2" for="theme">Temat:</label>
+                <input type="text" class="form-control" id="theme">
+                <label class="mt-2" for="comment">Wiadomość:</label>
+                <textarea class="form-control" rows="4" id="comment"></textarea>
+                <label class="my-2" for="usr">Twój e-mail:</label>
+                <input type="email" class="form-control" id="usr">
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary px-4">Prześlij</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-muted border dropdown-toggle px-4" data-toggle="dropdown">Kategoria</button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item active">Pytanie</a>
+                        <a class="dropdown-item">Informacja</a>
+                        <a class="dropdown-item">Skarga</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
